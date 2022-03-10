@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header flex maincontainer">
+        <a href="index.htm" target="blank">
+          <img src="images/logo.svg" alt="logoimage">  
+        </a>
+        
+
+
+        <div class="flex"> 
+            <ul class="nav-ul">
+                <li class="navigationstyles" >
+                <a class="navigationstyles" href="about.htm" target="blank" >about</a>
+                </li>
+                <li class="navigationstyles" >
+                <a class="navigationstyles" href="https://www.w3schools.com/html/html_intro.asp" target="blank" >requirements</a>
+                </li>
+                <li class="navigationstyles" >
+                    <a class="navigationstyles" href="contact.htm" target="blank" >contact</a>
+                    </li>
+                    <li class="navigationstyles" >
+                        <a class="navigationstyles" href="log.in.htm" target="blank" >log in</a>
+                        </li>          
+            </ul>
+            <label for="gamochndes"><img class="search" src="images/search.svg"  alt="searchlogo"></label>
+               <input type="checkbox" id="gamochndes" >
+               <div class="text9"> 
+                <input class="searchbar" type="text" placeholder="Search..">
+               
+       
+     </header>
+    <div class="loginbox">
+        <div class="loginwelcome"> 
+            <h2  > welcome</h2>
+        </div>
+
+        <div class="formbox"> 
+            <form>
+            
+            <input class="phonenumberlogin " type="text" placeholder="Phone number, username, or email" id="username" name="username" required> 
+             
+         </div>
+         <div class="formbox"> 
+           
+            <label for="psw"><b></b></label>
+                    <input class="passwordlogin" type="text" placeholder="Enter Password" name="psw" required>
+        </div>
+         
+        <button class="buttonlogin"> log in</button>   
+        <div> 
+             </form>
+    
+            <p class="signup">Don't have an account? </p>
+
+            <button class="signupbutton " onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+        </div>
+        
+
+         -->
+
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <form class="modal-content" action="/action_page.php">
+
+                <div class="container">
+                    <h1 class="signuph1">Sign Up</h1>
+                    <p>Please fill in this form to create an account.</p>
+                    <hr class="hr">
+                    <label for="email"><b>Email</b></label>
+                    <input class="signuptext" type="text" placeholder="Enter Email" name="email" required>
+              
+                    <label for="psw"><b>Password</b></label>
+                    <input class="signuppsw" type="password" placeholder="Enter Password" name="psw" required>
+              
+                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                    <input class="signuppsw" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                    
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+              
+                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+              
+                    <div class="flex">
+                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                      <button type="submit" class="signupbtn">Sign Up</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+    </div>
+    <div class="footerbg">
+        <div class="maincontainer flex  footer">
+            <img class="footerlogo" src="images/logo.svg" alt="logopic">
+            <div class="contact flex">
+                <ul class="footerul2 footerfont ">
+                    <li class="contacttext"> contact</li>
+                    <li>
+                        <a class="contactnumber footerfont" href="tel:123-456-7890">+995 322 98 56 47</a>
+                    </li>
+                    <li>
+            <a class="footeremail" href="mailto:marikunas@gmail.com?subject=The%20subject%20of%20the%20mail">marikunas@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class=" flex">
+                <ul class="footerul2">
+                    <li class="adresstext footerfont"> adress</li>
+                    <li>
+                        <a  class="navigationmap footerfont" href="https://www.google.com/maps?q=kerchi+street+tbilisi&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiHwpDHhrL2AhWESPEDHZ02Bc4Q_AUoAXoECAEQAw" target="blanket">Kerchi street</a>
+                    </li>
+                </ul>
+            </div>
+            <img src="images/download.png" alt="yticon">
+        </div>
+
+
+
+
+        <script>
+            var modal = document.getElementById('id01');
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+        
+</body>
+</html>
